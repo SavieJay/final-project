@@ -1,3 +1,7 @@
+html {
+    font-size: 16px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -1216,6 +1220,9 @@ input[type="email"] {
 
 
 @media screen and (max-width: 768px) {
+    html {
+        font-size: 13px;
+    }
     .head-logo {
         width: 70px;
         height: 18px;
@@ -1223,6 +1230,9 @@ input[type="email"] {
     ul {
         font-size: 0.7rem;
         gap: 1rem;
+    }
+    .section-1 {
+        height: 60vh;
     }
     .section-1-1 {
         width: 40%;
@@ -1343,4 +1353,32 @@ input[type="email"] {
         width: 365px;
         height: 269px;
     }
+
+    /* .header,
+    .section-2,
+    .section-3-1,
+    .section-4,
+    .section-5,
+    .section-7,
+    .section-8-content,
+    .footer-content,
+    .section-9,
+    .section-10,
+    .section-11,
+    .section-12,
+    .section-13,
+    .section-14,
+    .section-15-content {
+        width: 75%;
+    } */
+
+    /* .section-2-1-title,
+    .section-4-1-1-txt-1,
+    .section-5-2-1-title,
+    .section-6-1-1-title,
+    .section-7-1-title,
+    .footer-logo-title {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    } */
 }
