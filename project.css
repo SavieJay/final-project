@@ -22,6 +22,12 @@ body {
     padding: 1rem 0;
 }
 
+#check, .check-btn {
+    display: none;
+    color: #888888;
+    font-size: 1.5rem;
+}
+
 .head-logo {
     width: 100px;
     height: 22px;
@@ -1354,7 +1360,271 @@ input[type="email"] {
         height: 269px;
     }
 
-    /* .header,
+    
+    /* .section-2-1-title,
+    .section-4-1-1-txt-1,
+    .section-5-2-1-title,
+    .section-6-1-1-title,
+    .section-7-1-title,
+    .footer-logo-title {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    } */
+}
+
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 10px;
+    }
+    .header {
+        position: relative;
+    }
+    .header > .links ul {
+        position: absolute;
+        top: 5rem;
+        background: #999999;
+        left: -128%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: all 0.5s;
+        z-index: 99;
+        padding: 1rem 0 0.8rem 0;
+    }
+    .check-btn {
+        display: block;
+    }
+    #check:checked~.links ul {
+        left: 0;
+    }
+
+    .section-1 {
+        height: 42vh;
+    }
+
+    .section-2-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .section-2-2-1 {
+        width: 70%;
+    }
+
+    .section-2-2-img img{
+        width: 230px;
+        height: 142px;
+    }
+    .section-3-1-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .section-3-1-2-1 {
+        width: 80%;
+    }
+
+    .section-4 {
+        margin: 0 auto;
+        width: 72%;
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+        display: flex;
+        flex-direction: column-reverse;
+        /* justify-content: space-between; */
+        align-items: center;
+    }
+    .section-4-1 {
+        width: 70%;
+        text-align: center;
+    }
+    .section-4-img img{
+        width: 237px;
+        height: 227px;
+    }
+    .section-4-1-1-txt-2 {
+        width: 99%;
+    }
+
+    .section-5-2-1 {
+        width: 72%;
+        text-align: center;
+    }
+    .section-5-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        /* justify-content: space-between; */
+        align-items: center;
+        gap: 2.5rem;
+    }
+    .section-6 {
+        height: 30vh;
+    }
+    .section-6-img {
+        width: 55%;
+        background-size: cover;
+    }
+    .section-6-1-1-title {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    .section-6-1-1 {
+        width: 70%;
+        margin-left: 3rem;
+    }
+    .section-7 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    .section-7-img {
+        position: relative;
+        width: 250px;
+        height: 203px;
+        background-image: url("images/woma-img.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .section-7-2-img, .section-7-2-img img {
+        width: 30px;
+        height: 30px;
+    }
+    .section-7-1-title, .section-7-1-txt {
+        text-align: center;
+    }
+    .section-8-title {
+        text-align: center;
+    }
+    .section-8-content-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-8-2-1 {
+        width: 67%;
+    }
+
+    .section-9 {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-9-1 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-9-1 {
+        width: 60%;
+    }
+    .section-9-img {
+        border: solid red;
+        width: 256px;
+        height: 270px;
+    }
+    .section-9-btn {
+        font-size: 0.8rem;
+    }
+    .section-4-1-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .section-4-1-2-1 {
+        width: 65%;
+    }
+    .section-11 {
+        flex-direction: column-reverse;
+    }
+    .section-11-img {
+        width: 260px;
+        height: 279px;
+    }
+    .section-12-1 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-12-1-title {
+        width: 75%;
+    }
+    .section-12-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .section-12-img-1,
+    .section-12-img-2,
+    .section-12-img-3,
+    .section-12-img-4 {
+        width: 136px;
+        height: 243px;
+    }
+    .img-det {
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+
+    .car-section-9-img {
+        width: 286px;
+        height: 300px;
+    }
+
+    .section-14-title {
+        text-align: center;
+    }
+    .section-14-content {
+        flex-direction: column;
+    }
+    .ser-section-9-img {
+        width: 286px;
+        height: 300px;
+    }
+    .section-13-1 {
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .ar {
+        flex-direction: column-reverse;
+    }
+    .section-13-1-title,
+    .section-13-1-txt {
+        text-align: center;
+    }
+    .section-15-1 {
+        text-align: center;
+        width: 60%;
+    }
+    .section-15-content {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    .section-15-img {
+        width: 265px;
+        height: 210px;
+    }
+
+    .blog-section-8-content-1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .header,
     .section-2,
     .section-3-1,
     .section-4,
@@ -1369,16 +1639,7 @@ input[type="email"] {
     .section-13,
     .section-14,
     .section-15-content {
-        width: 75%;
-    } */
+        width: 90%;
+    }
 
-    /* .section-2-1-title,
-    .section-4-1-1-txt-1,
-    .section-5-2-1-title,
-    .section-6-1-1-title,
-    .section-7-1-title,
-    .footer-logo-title {
-        font-size: 1.4rem;
-        line-height: 1.8rem;
-    } */
 }
