@@ -1397,20 +1397,11 @@ input[type="email"] {
         width: 365px;
         height: 269px;
     }
-
-    
-    /* .section-2-1-title,
-    .section-4-1-1-txt-1,
-    .section-5-2-1-title,
-    .section-6-1-1-title,
-    .section-7-1-title,
-    .footer-logo-title {
-        font-size: 1.4rem;
-        line-height: 1.8rem;
-    } */
 }
 
-@media screen and (max-width: 375px) {
+
+
+@media screen and (max-width: 425px) {
     html {
         font-size: 10px;
     }
@@ -1483,7 +1474,6 @@ input[type="email"] {
         padding-bottom: 4rem;
         display: flex;
         flex-direction: column-reverse;
-        /* justify-content: space-between; */
         align-items: center;
     }
     .section-4-1 {
@@ -1505,7 +1495,6 @@ input[type="email"] {
     .section-5-2 {
         display: flex;
         flex-direction: column-reverse;
-        /* justify-content: space-between; */
         align-items: center;
         gap: 2.5rem;
     }
@@ -1687,5 +1676,4 @@ input[type="email"] {
     .section-15-content {
         width: 90%;
     }
-
 }
