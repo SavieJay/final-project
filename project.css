@@ -1246,6 +1246,19 @@ input[type="email"] {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.section-16 {
+    width: 72%;
+    margin: 0 auto;
+}
+
+.section-16-1-1-title {
+    font-size: 1.85rem;
+    font-weight: 700;
+}
+
+.b-active {
+    border-bottom: 2px solid #F58A07;
+}
 
 
 
